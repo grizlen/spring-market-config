@@ -16,3 +16,8 @@ spring:
       enabled: true
       settings:
         web-allow-others: false
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
+    fetch-registry: true
